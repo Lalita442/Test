@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-24T10:11:47.750Z",
+    "end": "2024-07-24T10:12:00.802Z",
+    "duration": 13052,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7a831b34-7be6-4b4e-b1dc-bf38d628d474",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2-advanced-examples\\orangeHRM.cy.js",
+      "file": "cypress\\e2e\\2-advanced-examples\\orangeHRM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "95bf1044-97cc-400e-a336-6c33c65d7d9d",
+          "title": "OrangeHRMLogin",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "loginverification",
+              "fullTitle": "OrangeHRMLogin loginverification",
+              "timedOut": null,
+              "duration": 9524,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\2-advanced-examples\\\\orangeHRM.cy.js\\\\homepage.png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(resource.HRM_BASE_URL);\ncy.wait(3000);\ncy.screenshot(\"homepage\");\n/*const ln=new Login();\nln.setUserName(\"Admin\")\nln.setPassword(\"admin123\")\nln.clickSubmit();\ncy.wait(2000);\ncy.screenshot(\"Dashboard\");\nln.verifyLogin();*/\ncy.HRMlogin(\"Admin\", \"admin123\");",
+              "err": {},
+              "uuid": "5a44bb81-36ac-4528-bd8e-993f5a71c938",
+              "parentUUID": "95bf1044-97cc-400e-a336-6c33c65d7d9d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5a44bb81-36ac-4528-bd8e-993f5a71c938"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

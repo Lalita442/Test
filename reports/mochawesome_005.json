@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-24T10:12:03.100Z",
+    "end": "2024-07-24T10:12:10.441Z",
+    "duration": 7341,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9564414c-68f3-4171-af5d-35ab1a7535bc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\2-advanced-examples\\practiceUI.cy.js",
+      "file": "cypress\\e2e\\2-advanced-examples\\practiceUI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "001edc0c-f3ae-41c1-8778-b48a68b8812b",
+          "title": "saucedemo ui application",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Step1 Logininto Site",
+              "fullTitle": "saucedemo ui application Step1 Logininto Site",
+              "timedOut": null,
+              "duration": 4948,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\2-advanced-examples\\\\practiceUI.cy.js\\\\homepage.png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://demo.applitools.com/\");\ncy.screenshot(\"homepage\");\ncy.wait(3000);\ncy.ACMElogin(\"standard_user\", \"secret_sauce\");",
+              "err": {},
+              "uuid": "2a143d57-35e0-4876-b632-17a42dd202f4",
+              "parentUUID": "001edc0c-f3ae-41c1-8778-b48a68b8812b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2a143d57-35e0-4876-b632-17a42dd202f4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4948,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
